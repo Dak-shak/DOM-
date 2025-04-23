@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- // create a webpage that will contain data/information about you. the page should be blank and use javascript to add the data where is necessary.  -->
+    <div id="app"></div>
+    <script>
+
+      let app = document.getElementById("app");
+    
+      const container = document.createElement("div");
+      container.className = "container";
+      container.style.maxWidth = "700px";
+      container.style.margin = "40px auto";
+      container.style.marginTop = "100px";
+      container.style.padding = "20px";
+      container.style.border = "2px solid #ddd";
+      container.style.borderRadius = "10px";
+      container.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.1)";
+      container.style.fontFamily = "Arial, sans-serif";
+      container.style.backgroundColor = "#f9f9f9";
+    
+     
+    
+
+     let heading = document.createElement("h1");
+      heading.innerText= "Lere Dakshak Mamman";
+      heading.style.textAlign = "center";
+      heading.style.color = "#333";
+    
+  
+      let about = document.createElement("section");
+      about.innerHTML = `
+        <h2>About Me</h2>
+        <p>I'm a passionate Interior Designer and Full-Stack Developer. I love blending creativity with technology to create user-friendly experiences and beautiful interior spaces.</p>
+      `;
+      about.style.marginBottom = "20px";
+    
+
+     let skills = document.createElement("section");
+      skills.innerHTML = `
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Node.js, Express</li>
+          <li>UI/UX Design</li>
+          <li>Interior Design & 3D Modeling</li>
+        </ul>
+      `;
+      skills.style.marginBottom = "20px";
+      skills.style.textDecoration = "none";
+  
+     let contact = document.createElement("section");
+      contact.innerHTML = `
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:lere@example.com">dshak0672@gmail.com</a></p>
+      `;
+    
+      container.appendChild(heading);
+      container.appendChild(about);
+      container.appendChild(skills);
+      container.appendChild(contact);
+    
+  
+      app.appendChild(container);
+    </script>
+    
+</body>
+</html>
